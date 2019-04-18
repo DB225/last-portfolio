@@ -1,0 +1,51 @@
+/*The position of the map*/
+.map__image{
+    width: 50%;
+    float: left;
+    position: relative;
+    left: 23%;
+}
+
+/*Style for the areas of the map */
+.map__image path{
+    fill: #00b489;
+    stroke: #FFF;
+    stroke-width: 1px;
+    transition: fill 0.3s;
+    cursor: pointer;
+}
+
+/*Style when we hover the map*/
+.map__image .is-active path{
+    fill: #2E8B57;
+}
+
+/*The position of the list*/
+.map__list{
+    float: right;
+    width: 50%;
+    position: relative;
+    left: 13%;
+}
+
+/*Style for the list*/
+.map__list a{
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+/*Style when we hover the list*/
+.map__list a.is-active{
+    color: #2E8B57;
+    font-weight: bold;
+}
+
+/*The position of the title*/
+.title li{
+    display: inline-block;
+    list-style-type: none;
+    position: relative;
+    left: 40%;
+    right: 30%;
+}
