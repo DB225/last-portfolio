@@ -4,8 +4,8 @@
 $(document).ready(function(){
     // Text for HTML5
     $("ol li:nth-child(1)").hover(function(){
-            $("#level").text("HTML5 : Intermediate")
-                .css("fontSize","20px").css("display","inline").css('position','relative')
+            $("#level").text("HTML5")
+                .css("fontSize","30px").css("display","inline").css('position','relative')
                 .css('textAlign','left')
         },
         function(){
@@ -14,7 +14,7 @@ $(document).ready(function(){
 
     //Text for CSS3
     $("ol li:nth-child(2)").hover(function(){
-            $("#level").text("CSS3 : Intermediate");
+            $("#level").text("CSS3");
         },
         function(){
             $("#level").text("");
@@ -22,7 +22,7 @@ $(document).ready(function(){
 
     //Text for JavaScript
     $("ol li:nth-child(3)").hover(function(){
-            $("#level").text("JavaScript : Intermediate");
+            $("#level").text("JAVASCRIPT");
         },
         function(){
             $("#level").text("");
@@ -30,7 +30,7 @@ $(document).ready(function(){
 
     //Text for Github
     $("ol li:nth-child(4)").hover(function(){
-            $("#level").text("Python : Intermediate");
+            $("#level").text("PYTHON");
         },
         function(){
             $("#level").text("");
@@ -38,7 +38,7 @@ $(document).ready(function(){
 
     //Text for Linux
     $("ol li:nth-child(5)").hover(function(){
-            $("#level").text("Mongo DB : Intermediate");
+            $("#level").text("MONGO DB");
         },
         function(){
             $("#level").text("");
@@ -46,7 +46,7 @@ $(document).ready(function(){
 
     //Text for Python
     $("ol li:nth-child(6)").hover(function(){
-            $("#level").text("Node JS : Intermediate");
+            $("#level").text("NODE JS");
         },
         function(){
             $("#level").text("");

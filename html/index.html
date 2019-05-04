@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width", initial-scale="0.1">
   <title>Title</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Vidaloka">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arapey">
@@ -10,31 +11,33 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <script src="../js/jquery-3.4.0.js"></script>
 </head>
+
 <body>
 <div class="section">
   <div class="menu-block">
     <nav class="menu-nav">
       <a href="#" >
-        Home
+        <b>Home</b>
         <img src="../images/house-outline.png" height="30" width="30"/>
       </a>
       <a href="#AboutMePart" >
-        About me
+        <b>About me</b>
         <img src="../images/aboutMe.png" height="32" width="32"/>
       </a>
       <a href="#projectsPart" >
-        Projects
+        <b>Projects</b>
         <img src="../images/projects.png" height="30" width="30"/>
       </a>
-      <a href="#eduPart" >Education
+      <a href="#eduPart" >
+        <b>Education</b>
         <img src="../images/education.png" height="34" width="34"/>
       </a>
       <a href="#resumePart">
-        Resume
+        <b>Resume</b>
         <img src="../images/resume.png" height="30" width="30"/>
       </a>
       <a href="#contactPart">
-        Contact
+        <b>Contact</b>
         <img src="../images/contact.png" height="30" width="30"/>
       </a>
     </nav>
@@ -56,9 +59,9 @@
     <p>My passion is focused on solving problems and bringing new ideas according to the current needs.</p>
   </div>
   <div class="bespoke">
-    <h5>
-      <i>The theater of dreams...</i>
-    </h5>
+    <h2>
+      More <span id="message"></span><span class="cursor"></span>
+    </h2>
   </div>
 </header>
 
@@ -89,7 +92,7 @@
       <img src="../images/aboutMeMiddlePic.jpg" height="200" width="200"/>
       <h2>Didier Bonga</h2>
       <h5>Junior Software developer</h5>
-      <p> We are expected to be learning every day.Every day new challenges comes
+      <p> We are expected to be learning every single day.New challenges comes
         to us and this is awesome as we're not stagnating in the job market.</p>
       <img src="../images/signature.png" height="90" width="152"/>
     </div>
@@ -98,8 +101,76 @@
 
 <article id="projectsPart">
   <h1>PROJECTS</h1>
-  <div class="gridProj">
-    <div class="proj1">
+<!--  <div class="gridProj">-->
+
+<!--    <div class="proj1">-->
+<!--      <h2>Map Hover Effect</h2>-->
+<!--      <a href="../html/map.html" target="_blank">-->
+<!--        <img src="../images/cote-divoire.png" height="360" width="322"/>-->
+<!--      </a>-->
+<!--      <br>-->
+<!--      <span><img src="../images/html.png" height="75" width="69"/></span>-->
+<!--      <span><img src="../images/css.png" height="75" width="59"/></span>-->
+<!--      <span><img src="../images/js.png" height="75" width="61"/></span>-->
+<!--    </div>-->
+
+<!--    <div class="proj2">-->
+<!--      <h2>Tic Tac Toe</h2>-->
+<!--      <a href="../html/ticTacToe.html" target="_blank">-->
+<!--        <img src="../images/ticTacToe.png" height="362" width="362"/>-->
+<!--      </a>-->
+<!--      <br>-->
+<!--      <span><img src="../images/html.png" height="75" width="69"/></span>-->
+<!--      <span><img src="../images/css.png" height="75" width="59"/></span>-->
+<!--      <span><img src="../images/js.png" height="75" width="61"/></span>-->
+<!--    </div>-->
+
+<!--    <div class="proj3">-->
+<!--      <h2>Ping Pong Game</h2>-->
+<!--      <a href="../html/PingPong.html" target="_blank">-->
+<!--        <img src="../images/pingpong.png" height="220" width="383"/>-->
+<!--      </a>-->
+<!--      <br>-->
+<!--      <span><img src="../images/html.png" height="75" width="69"/></span>-->
+<!--      <span><img src="../images/js.png" height="75" width="61"/></span>-->
+<!--    </div>-->
+
+<!--    <div class="proj4">-->
+<!--      <h2>Show/hide BLACK PANTHER</h2>-->
+<!--      <a href="../frontend-halfday2-showhide-game-DB225/halfday2.html" target="_blank">-->
+<!--        <img src="../images/black_panther.png" height="240" width="320"/>-->
+<!--      </a>-->
+<!--      <br>-->
+<!--      <span><img src="../images/js.png" height="75" width="61"/></span>-->
+<!--    </div>-->
+
+<!--    <div class="proj5">-->
+<!--      <h2>Wiki Media</h2>-->
+<!--      <a href="../project2-django-DB225-1/wikiProject/wikiApp/templates/wikiApp/index.html" target="_blank">-->
+<!--        <img src="../images/wiki.png" height="260" width="280"/>-->
+<!--      </a>-->
+<!--      <br>-->
+<!--      <span><img src="../images/django.png" height="110" width="140"/></span>-->
+<!--    </div>-->
+
+<!--    <div class="proj6">-->
+<!--      <h2>Lissa</h2>-->
+<!--      <a href="" target="_blank">-->
+<!--        <img src="../images/Fox-logo.png" height="240" width="150"/></a>-->
+<!--      <br>-->
+<!--      <span>-->
+<!--        <img src="../images/mongodb.png" height="105" width="111"/>-->
+<!--        <img src="../images/ReactJs.png" height="115" width="111"/>-->
+<!--        <img src="../images/nodejs.png" height="115" width="111"/>-->
+<!--      </span>-->
+<!--    </div>-->
+<!--  </div>-->
+
+
+  <div class="slideshow-container">
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 6</div>
       <h2>Map Hover Effect</h2>
       <a href="../html/map.html" target="_blank">
         <img src="../images/cote-divoire.png" height="360" width="322"/>
@@ -108,17 +179,11 @@
       <span><img src="../images/html.png" height="75" width="69"/></span>
       <span><img src="../images/css.png" height="75" width="59"/></span>
       <span><img src="../images/js.png" height="75" width="61"/></span>
+      <div class="text">Caption Text</div>
     </div>
-    <div class="proj2">
-      <h2>Ping Pong Game</h2>
-      <a href="../html/PingPong.html" target="_blank">
-        <img src="../images/pingpong.png" height="220" width="383"/>
-      </a>
-      <br>
-      <span><img src="../images/html.png" height="75" width="69"/></span>
-      <span><img src="../images/js.png" height="75" width="61"/></span>
-    </div>
-    <div class="proj3">
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 6</div>
       <h2>Tic Tac Toe</h2>
       <a href="../html/ticTacToe.html" target="_blank">
         <img src="../images/ticTacToe.png" height="362" width="362"/>
@@ -127,27 +192,77 @@
       <span><img src="../images/html.png" height="75" width="69"/></span>
       <span><img src="../images/css.png" height="75" width="59"/></span>
       <span><img src="../images/js.png" height="75" width="61"/></span>
+      <div class="text">Caption Two</div>
     </div>
-    <div class="proj4">
-      <h2>Wiki App</h2>
-      <a href="../project2-django-DB225-1/wikiProject/wikiApp">
-        <img src="../images/wiki.png" height="260" width="280"/>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 6</div>
+      <h2>Ping Pong Game</h2>
+      <a href="../html/PingPong.html" target="_blank">
+        <img src="../images/pingpong.png" height="220" width="383"/>
       </a>
       <br>
-      <span><img src="../images/django.png" height="110" width="140"/></span>
+      <span><img src="../images/html.png" height="75" width="69"/></span>
+      <span><img src="../images/js.png" height="75" width="61"/></span>
+      <div class="text">Caption Three</div>
     </div>
-    <div class="proj5">
+
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 6</div>
       <h2>Show/hide BLACK PANTHER</h2>
       <a href="../frontend-halfday2-showhide-game-DB225/halfday2.html" target="_blank">
         <img src="../images/black_panther.png" height="240" width="320"/>
       </a>
       <br>
       <span><img src="../images/js.png" height="75" width="61"/></span>
+      <div class="text">Caption Four</div>
     </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">5 / 6</div>
+      <h2>Wiki Media</h2>
+      <a href="../project2-django-DB225-1/wikiProject/wikiApp/templates/wikiApp/index.html" target="_blank">
+        <img src="../images/wiki.png" height="260" width="280"/>
+      </a>
+      <br>
+      <span><img src="../images/django.png" height="110" width="140"/></span>
+      <div class="text">Caption Five</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">6 / 6</div>
+      <h2>Lissa</h2>
+      <a href="" target="_blank">
+        <img src="../images/Fox-logo.png" height="240" width="150"/></a>
+      <br>
+      <span>
+        <img src="../images/mongodb.png" height="105" width="111"/>
+        <img src="../images/ReactJs.png" height="115" width="111"/>
+        <img src="../images/nodejs.png" height="115" width="111"/>
+      </span>
+      <div class="text">Caption Six</div>
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
   </div>
 </article>
+
+
 <article id="eduPart" >
-  <h1>EDUCATION</h1>
+  <h1>EDUCATION & SKILLS</h1>
   <div class="education">
     <div>
       <h2>Bachelor degree in Computer Science</h2>
@@ -159,6 +274,10 @@
       <div class="rightText">
         <h4>People's friendship University of Moscow</h4>
         <p>I learned Russian for two years, after which I started the first year.</p>
+        <h4>SKILLS</h4>
+        <div id="level">
+        </div>
+
       </div>
     </div>
 
@@ -175,11 +294,6 @@
       </div>
     </div>
   </div>
-
-  <div class="skillTitle">
-  </div>
-  <!--    <div id="level">-->
-  <!--    </div>-->
   <ol>
     <li><a href=""><i class="fab fa-html5" aria-hidden="true"></i></a></li>
     <li><a href=""><i class="fab fa-css3-alt" aria-hidden="true"></i></a></li>
@@ -235,10 +349,12 @@
   </div>
   <div class="flag">
     <img src="../images/US-United-States-Flag-icon.png" height="24" width="24"/>
-    <img src="../images/russia_flag.png" height="29" width="22"/>
+    <img src="../images/russia_flag.png" height="23" width="22"/>
     <img src="../images/cote_d'ivoireMiniLogo.png" height="25" width="25"/>
   </div>
 </footer>
+<script src="../js/Slide.js"></script>
+<script src="../js/Typer.js"></script>
 <script src="../js/skills.js"></script>
 <script src="../js/main.js"></script>
 </body>

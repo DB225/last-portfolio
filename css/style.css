@@ -81,7 +81,7 @@ body {
 
 .menu-nav a {
   text-decoration: none;
-  color: #222;
+  color: #2c2c2c;
   text-transform: uppercase;
   font-weight: 100;
   display: inline-block;
@@ -123,6 +123,7 @@ header,section,article,aside{
   border-radius: 15px;
   padding-top: 8%;
   background-color: rgba(255, 250, 250, 0.93);
+  margin-top: 10px;
 }
 
 h1{
@@ -136,6 +137,7 @@ footer{
   background-color: rgba(255, 250, 250, 0.93);
   display: grid;
   grid-template-columns: repeat(3,1fr);
+  margin-top: 10px;
 }
 
 .flag img{
@@ -154,8 +156,10 @@ header div{
 }
 
 header{
-  height: 540px;
+  height: 670px;
   padding-top: 10%;
+  padding-right: 10px;
+  padding-left: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
@@ -168,24 +172,52 @@ header{
   position: relative;
   padding: 10% 5% 10% 5%;
   text-align: center;
-  border: 1px solid blue;
   border-radius: 10px;
+  font-size: 17px;
+  background-color: rgba(181, 181, 221, 0.35);
 }
+
 
 .presentation{
   grid-area: presentation;
   position: relative;
   padding: 15% 5% 10% 5%;
-  border: 1px solid blue;
   border-radius: 10px;
+  background-color: rgba(181, 181, 221, 0.35);
 }
 
 .bespoke{
   grid-area: bespoke;
   padding-top: 5%;
-  border: 1px solid blue;
+  margin-bottom: 5%;
   border-radius: 10px;
+  background-color: rgba(181, 181, 221, 0.35);
 }
+
+.bespoke h2{
+  position: relative;
+  bottom: 30px;
+  color: rgba(0, 17, 39, 1);
+}
+
+.cursor {
+  display: inline-block;
+  height: 40px;
+  width: 2px;
+  background: #002752;
+  vertical-align: middle;
+  animation: 1s blink linear infinite;
+}
+@keyframes blink {
+  0%,49% {
+    opacity: 0;
+  }
+  50%,100% {
+    opacity: 1;
+  }
+}
+
+
 
 /**************************ABOUT ME***********************/
 
@@ -202,7 +234,7 @@ header{
   padding-right: 10%;
   padding-left: 10%;
   border-radius: 10px;
-  background-color: rgba(0, 0, 255, 0.63);
+  background-color: rgba(0, 0, 254, 0.41);
   border: 3px solid rgba(255, 250, 250, 0.93);
   margin-right: 20px;
 }
@@ -223,7 +255,13 @@ header{
 .infoText{
   grid-area: text;
   text-align: left;
-  padding-right: 10%;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: rgba(181, 181, 221, 0.35);
 }
 
 .infoImg{
@@ -592,11 +630,8 @@ ol li:hover #node{
 
 
 /*************************PROJECTS************************/
-#projectsPart{
-  border: 1px solid black;
-}
 
-#projectsPart a , .pagination{
+#projectsPart a {
   position: relative;
   z-index: 255;
   text-decoration: none;
@@ -608,10 +643,107 @@ ol li:hover #node{
 
 }
 
-
 #projectsPart div{
   border: 1px solid black;
+  border-radius: 15px;
 }
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
 
 
 
