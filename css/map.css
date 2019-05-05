@@ -1,3 +1,9 @@
+body{
+  background-color: rgba(175, 175, 175, 0.3);
+}
+
+
+
 /*The position of the map*/
 .map__image{
     width: 50%;

@@ -637,18 +637,6 @@ ol li:hover #node{
   text-decoration: none;
 }
 
-.gridProj{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-
-}
-
-#projectsPart div{
-  border: 1px solid black;
-  border-radius: 15px;
-}
-
-
 * {box-sizing:border-box}
 
 /* Slideshow container */
@@ -661,6 +649,8 @@ ol li:hover #node{
 /* Hide the images by default */
 .mySlides {
   display: none;
+  border-radius: 15px;
+  background-color: rgba(181, 181, 221, 0.35);
 }
 
 /* Next & previous buttons */
@@ -671,7 +661,7 @@ ol li:hover #node{
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
+  color: crimson;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -690,20 +680,10 @@ ol li:hover #node{
   background-color: rgba(0,0,0,0.8);
 }
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #f2f2f2;
+  color: navy;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
@@ -779,15 +759,10 @@ ol li:hover #node{
 /*************************************************************/
 
 
-/**************************RESUME*****************************/
-
-
-
-
 /***************************CONTACT***************************/
 /*Size of the form */
 iframe{
-  height: 430px;
+  height: 469px;
   width: 100%;
   border: 2px solid black;
   border-radius: 10px;
