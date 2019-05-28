@@ -3,9 +3,9 @@
 
 $(document).ready(function(){
     // Text for HTML5
-    $("ol li:nth-child(1)").hover(function(){
+    $("ol li:nth-child(2)").hover(function(){
             $("#level").text("HTML5")
-                .css("fontSize","30px").css("display","inline").css('position','relative')
+                .css("fontSize","15px").css("display","inline").css('position','relative')
                 .css('textAlign','left')
         },
         function(){
@@ -13,7 +13,7 @@ $(document).ready(function(){
         });
 
     //Text for CSS3
-    $("ol li:nth-child(2)").hover(function(){
+    $("ol li:nth-child(3)").hover(function(){
             $("#level").text("CSS3");
         },
         function(){
@@ -21,8 +21,8 @@ $(document).ready(function(){
         });
 
     //Text for JavaScript
-    $("ol li:nth-child(3)").hover(function(){
-            $("#level").text("JAVASCRIPT");
+    $("ol li:nth-child(1)").hover(function(){
+            $("#level").text("JAVASCRIPT (Microsoft Certification)");
         },
         function(){
             $("#level").text("");
@@ -38,7 +38,7 @@ $(document).ready(function(){
 
     //Text for Linux
     $("ol li:nth-child(5)").hover(function(){
-            $("#level").text("MONGO DB");
+            $("#level").text("JAVA");
         },
         function(){
             $("#level").text("");
@@ -46,9 +46,11 @@ $(document).ready(function(){
 
     //Text for Python
     $("ol li:nth-child(6)").hover(function(){
-            $("#level").text("NODE JS");
+            $("#level").text("SQL");
         },
         function(){
             $("#level").text("");
         });
+    //////////////////////////////////////////////////////////
+
 });

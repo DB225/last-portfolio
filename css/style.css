@@ -85,7 +85,7 @@ body {
   text-transform: uppercase;
   font-weight: 100;
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 60px;
   transition: 1s;
   z-index: 255;
 }
@@ -188,8 +188,9 @@ header{
 
 .bespoke{
   grid-area: bespoke;
+  height: 20px;
   padding-top: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
   border-radius: 10px;
   background-color: rgba(181, 181, 221, 0.35);
 }
@@ -273,41 +274,41 @@ header{
 .bar{
   background: #262626;
   display: block;
-  height: 3px;
+  height: 6px;
   border: 1px solid black;
   border-radius: 7px;
   overflow: hidden;
-  box-shadow: 0 0 10px #e1ffc3;
+  box-shadow: 0 0 10px #002752;
 }
 
 /*Color of the loading level*/
 .bar span{
-  height: 2px;
+  height: 6px;
   float: left;
-  background: #caffa7;
+  background: #a71d2a;
 }
 
 /*Level of the "creativity" bar*/
 .creativity{
-  width: 90%;
+  width: 100%;
   animation: creativity 4s;
 }
 
 /*Level of the "communication" bar*/
 .communication{
-  width: 80%;
+  width: 100%;
   animation: communication 4s;
 }
 
 /*Level of the "organisation" bar*/
 .organisation{
-  width: 70%;
+  width: 100%;
   animation: organisation 4s;
 }
 
 /*Level of the "management" bar*/
 .management{
-  width: 75%;
+  width: 100%;
   animation: management 4s;
 }
 
@@ -317,7 +318,7 @@ header{
     width: 0%;
   }
   100%{
-    width: 90%;
+    width: 100%;
   }
 }
 
@@ -327,7 +328,7 @@ header{
     width: 0%;
   }
   100%{
-    width: 80%;
+    width: 100%;
   }
 }
 
@@ -337,7 +338,7 @@ header{
     width: 0%;
   }
   100%{
-    width: 70%;
+    width: 100%;
   }
 }
 
@@ -347,7 +348,7 @@ header{
     width: 0%;
   }
   100%{
-    width: 75%;
+    width: 100%;
   }
 }
 
@@ -375,9 +376,17 @@ ol li
 /*Style for the symbols*/
 ol li a .fab
 {
-  font-size: 50px;
+  font-size: 55px;
   color: #262626;
-  line-height: 80px;
+  line-height: 70px;
+  transform: .5s;
+}
+
+ol li a .fas
+{
+  font-size: 55px;
+  color: #262626;
+  line-height: 70px;
   transform: .5s;
 }
 
@@ -436,23 +445,23 @@ ol li a:hover
 }
 
 /*Initial statement of the HTML logo*/
-ol li:nth-child(1) a
+ol li:nth-child(2) a
 {
   background: #FFF;
 }
 
 /*When we hover the HTML logo*/
-ol li:nth-child(1) a:hover
+ol li:nth-child(2) a:hover
 {
   background: rgba(255, 69, 0, 0.86);
 }
 
-ol li:nth-child(1) a:hover::before
+ol li:nth-child(2) a:hover::before
 {
   background: rgba(255, 69, 0, 0.74);
 }
 
-ol li:nth-child(1) a:hover::after
+ol li:nth-child(2) a:hover::after
 {
   background: rgba(255, 69, 0, 0.74);
 }
@@ -460,46 +469,46 @@ ol li:nth-child(1) a:hover::after
 /*********************************************/
 
 /*Initial statement of the CSS logo*/
-ol li:nth-child(2) a
+ol li:nth-child(3) a
 {
   background: #FFF;
 }
 
 /*When we hover the CSS logo*/
-ol li:nth-child(2) a:hover
+ol li:nth-child(3) a:hover
 {
   background: rgba(70, 130, 180, 0.82);
 }
 
-ol li:nth-child(2) a:hover::before
+ol li:nth-child(3) a:hover::before
 {
   background: rgba(70, 130, 180, 0.7);
 }
 
-ol li:nth-child(2) a:hover::after
+ol li:nth-child(3) a:hover::after
 {
   background: rgba(70, 130, 180, 0.7);
 }
 /*********************************************/
 
 /*Initial statement of the JS logo*/
-ol li:nth-child(3) a
+ol li:nth-child(1) a
 {
   background: #FFF;
 }
 
 /*When we hover the JS logo*/
-ol li:nth-child(3) a:hover
+ol li:nth-child(1) a:hover
 {
   background: yellow;
 }
 
-ol li:nth-child(3) a:hover::before
+ol li:nth-child(1) a:hover::before
 {
   background: yellow;
 }
 
-ol li:nth-child(3) a:hover::after
+ol li:nth-child(1) a:hover::after
 {
   background: yellow;
 }
@@ -511,23 +520,23 @@ ol li:hover #js{
 /*********************************************/
 
 /*Initial statement of the JS logo*/
-ol li:nth-child(3) a
+ol li:nth-child(1) a
 {
   background: #FFF;
 }
 
 /*When we hover the JS logo*/
-ol li:nth-child(3) a:hover
+ol li:nth-child(1) a:hover
 {
   background: yellow;
 }
 
-ol li:nth-child(3) a:hover::before
+ol li:nth-child(1) a:hover::before
 {
   background: yellow;
 }
 
-ol li:nth-child(3) a:hover::after
+ol li:nth-child(1) a:hover::after
 {
   background: yellow;
 }
@@ -569,60 +578,60 @@ ol li:hover #python{
 
 /*********************************************/
 
-/*Initial statement of the MONGO DB logo*/
+/*Initial statement of the JAVA logo*/
 ol li:nth-child(5) a
 {
   background: #FFF;
 }
 
-/*When we hover the MONGO DB logo*/
+/*When we hover the JAVA logo*/
 ol li:nth-child(5) a:hover
 {
-  background: rgba(0, 70, 0, 0.83);
+  background: #d9d5c1;
 }
 
 ol li:nth-child(5) a:hover::before
 {
-  background: rgba(0, 8, 0, 0.83);
+  background: #d9d5c1;
 }
 
 ol li:nth-child(5) a:hover::after
 {
-  background: rgba(0, 8, 0, 0.83);
+  background: #d9d5c1;
 }
 
-/*The symbol of mongo DB become white when we hover him*/
-ol li:hover #mongo{
-  color:white;
+/*The symbol of JAVA become blue when we hover him*/
+ol li:hover #java{
+  color: navy;
 }
 
 /*********************************************/
 
-/*Initial statement of the NODE JS logo*/
+/*Initial statement of the SQL logo*/
 ol li:nth-child(6) a
 {
   background: #FFF;
 }
 
-/*When we hover the NODE JS DB logo*/
+/*When we hover the SQL DB logo*/
 ol li:nth-child(6) a:hover
 {
-  background: rgba(0, 255, 0, 0.09);
+  background: rgba(255, 165, 0, 0.33);
 }
 
 ol li:nth-child(6) a:hover::before
 {
-  background: rgba(0, 255, 0, 0.12);
+  background: rgba(255, 165, 0, 0.33);
 }
 
 ol li:nth-child(6) a:hover::after
 {
-  background: rgba(0, 255, 0, 0.09);
+  background: rgba(255, 165, 0, 0.33);
 }
 
-/*The symbol of node JS become green when we hover him*/
-ol li:hover #node{
-  color:green;
+/*The symbol of SQL become blue when we hover him*/
+ol li:hover #sql{
+  color: rgba(0, 0, 199, 0.82);
 }
 
 /*********************************************************/
@@ -763,22 +772,22 @@ ol li:hover #node{
 /*Size of the form */
 iframe{
   height: 469px;
-  width: 100%;
+  width:100%;
   border: 2px solid black;
   border-radius: 10px;
 }
 
-.contact{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
+/*.contact{*/
+/*  display: grid;*/
+/*  grid-template-columns: 1fr 1fr;*/
+/*}*/
 
 
 .contact li{
   list-style-type: none;
   position: relative;
   right: 45%;
-  top: 80%;
+  /*top: 80%;*/
 }
 
 .contact li a:nth-child(1){
