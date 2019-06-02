@@ -143,12 +143,12 @@ footer{
 .flag img{
   position: relative;
   top:70%;
-  right: 87%;
+  right: 90%;
 }
 
 .smallText{
   position: relative;
-  right: 39px;
+  right: 19px;
 }
 
 header div{
@@ -769,28 +769,26 @@ ol li:hover #sql{
 
 
 /***************************CONTACT***************************/
-/*Size of the form */
-iframe{
-  height: 469px;
-  width:100%;
-  border: 2px solid black;
-  border-radius: 10px;
+.contact{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "contactField contactLinks";
 }
 
-/*.contact{*/
-/*  display: grid;*/
-/*  grid-template-columns: 1fr 1fr;*/
-/*}*/
+.contactField{
+  grid-area: contactField;
+}
 
+.contactLinks{
+  grid-area: contactLinks;
+}
 
 .contact li{
   list-style-type: none;
-  position: relative;
-  right: 45%;
-  /*top: 80%;*/
 }
 
-.contact li a:nth-child(1){
-  font-size: 50px;
-  color: black;
-}
+/*.contact li a:nth-child(1){*/
+/*  font-size: 50px;*/
+/*  color: black;*/
+/*}*/
