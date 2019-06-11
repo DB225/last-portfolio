@@ -769,26 +769,21 @@ ol li:hover #sql{
 
 
 /***************************CONTACT***************************/
-.contact{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    "contactField contactLinks";
-}
+/*.contact{*/
+/*  display: grid;*/
+/*  grid-template-columns: 1fr 1fr;*/
+/*  grid-template-areas:*/
+/*    "contactField contactLinks";*/
+/*}*/
 
-.contactField{
-  grid-area: contactField;
-}
+/*.contactField{*/
+/*  grid-area: contactField;*/
+/*}*/
 
-.contactLinks{
-  grid-area: contactLinks;
-}
+/*.contactLinks{*/
+/*  grid-area: contactLinks;*/
+/*}*/
 
 .contact li{
   list-style-type: none;
 }
-
-/*.contact li a:nth-child(1){*/
-/*  font-size: 50px;*/
-/*  color: black;*/
-/*}*/
