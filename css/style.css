@@ -23,7 +23,7 @@ body {
 /*************************************************************************************************************/
 
 .section {
-  height: 100vh;
+  /*height: 100vh;*/
   display: flex;
   position:fixed;
 }
@@ -192,14 +192,9 @@ header{
   padding-top: 5%;
   margin-bottom: 2%;
   border-radius: 10px;
-  background-color: rgba(181, 181, 221, 0.35);
+  /*background-color: rgba(181, 181, 221, 0.35);*/
 }
 
-.bespoke h2{
-  position: relative;
-  bottom: 30px;
-  color: rgba(0, 17, 39, 1);
-}
 
 .cursor {
   display: inline-block;
@@ -263,6 +258,38 @@ header{
   margin-bottom: 10px;
   border-radius: 10px;
   background-color: rgba(181, 181, 221, 0.35);
+}
+
+
+.insideText{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-areas:
+      "inside1 inside2 inside3";
+}
+
+.insideText{
+  text-align: center;
+}
+
+.inside1{
+  grid-area: inside1;
+  border-radius: 20px;
+  background-color: rgba(121, 121, 161, 0.31);
+  padding-bottom: 10%;
+}
+
+.inside2{
+  grid-area: inside2;
+  border-radius: 20px;
+  background-color: rgba(121, 121, 161, 0.31);
+}
+
+.inside3{
+  grid-area: inside3;
+  border-radius: 20px;
+  background-color: rgba(121, 121, 161, 0.31);
 }
 
 .infoImg{
@@ -769,21 +796,71 @@ ol li:hover #sql{
 
 
 /***************************CONTACT***************************/
-/*.contact{*/
-/*  display: grid;*/
-/*  grid-template-columns: 1fr 1fr;*/
-/*  grid-template-areas:*/
-/*    "contactField contactLinks";*/
-/*}*/
+.contact{
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "contact1 contact2";
 
-/*.contactField{*/
-/*  grid-area: contactField;*/
-/*}*/
+}
+.contact1 iframe{
+  width: 50%;
+  height: 100%;
+}
 
-/*.contactLinks{*/
-/*  grid-area: contactLinks;*/
-/*}*/
+.contact1{
+  grid-area: contact1;
+}
 
-.contact li{
+.contact2{
+  grid-area: contact2;
+
+}
+
+.contact2 li a{
   list-style-type: none;
+}
+
+@media screen and (max-width: 380px)
+{
+  header{
+    height: 20px;
+  }
+  h1{
+    font-size: 18px;
+  }
+  nav a{
+    font-size: 7px;
+    padding: 8px;
+  }
+}
+
+@media screen and(min-width: 381px) and (max-width: 679px)
+{
+  header{
+    height: 50px;
+  }
+  h1{
+    font-size: 28px;
+  }
+  nav a{
+    font-size: 12px;
+    padding: 10px;
+  }
+}
+
+
+@media screen and(min-width: 680px) and (max-width: 1279px)
+{
+  header{
+    height: 60px;
+  }
+  h1{
+    font-size: 38px;
+  }
+  nav a{
+    font-size: 12px;
+    padding: 10px;
+  }
 }
