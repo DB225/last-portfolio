@@ -797,16 +797,11 @@ ol li:hover #sql{
 
 /***************************CONTACT***************************/
 .contact{
-  height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
     "contact1 contact2";
 
-}
-.contact1 iframe{
-  width: 50%;
-  height: 100%;
 }
 
 .contact1{
@@ -818,7 +813,7 @@ ol li:hover #sql{
 
 }
 
-.contact2 li a{
+.contact2 li {
   list-style-type: none;
 }
 
