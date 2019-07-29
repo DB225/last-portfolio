@@ -91,13 +91,13 @@ function main() {
                 // Somebody won
                 if(endGame){
                     view.sendMessage("<h4>Winner: Player "+(currentPlayer+1)+" \_(^_^)_/" +
-                        "<br> <button style='width: 100px; height: 50px; border-radius: 10px; background-color: navy; font-size: 20px'><a style='text-decoration: none; color: white' href=../html/ticTacToe.html\>Restart</a></button>");
+                        "<br> <button style='width: 100px; height: 50px; border-radius: 10px; background-color: navy; font-size: 20px'><a style='text-decoration: none; color: white' href=ticTacToe.html\>Restart</a></button>");
                     return;
                 }
                 //Tied
                 if(tied(pieces)){
                     view.sendMessage("<h3>Tied! |_(-_-)_|" +
-                        "<br> <button style='width: 100px; height: 50px; border-radius: 10px; background-color: navy; font-size: 20px'><a style='text-decoration: none; color: white' href=../html/ticTacToe.html\>Restart</a></button>");
+                        "<br> <button style='width: 100px; height: 50px; border-radius: 10px; background-color: navy; font-size: 20px'><a style='text-decoration: none; color: white' href=ticTacToe.html\>Restart</a></button>");
                     return;
                 }
 
